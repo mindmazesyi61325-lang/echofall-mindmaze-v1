@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Echofall V1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌆 Echofall</h1>
+
+<!-- Mood Check -->
+<div class="card">
+  <h2>How are you feeling?</h2>
+  <div id="moods">
+    <button onclick="setMood('sad')">😞</button>
+    <button onclick="setMood('neutral')">😐</button>
+    <button onclick="setMood('happy')">🙂</button>
+  </div>
+</div>
+
+<!-- Vent -->
+<div class="card">
+  <h2>Say something...</h2>
+  <textarea id="ventInput"></textarea>
+  <button onclick="postVent()">Post</button>
+</div>
+
+<!-- Posts -->
+<div class="card">
+  <h2>Community</h2>
+  <div id="posts"></div>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
